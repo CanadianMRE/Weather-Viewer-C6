@@ -1,0 +1,160 @@
+/*Universal Selectors*/
+:root {
+    --button-blue: #84adf8;
+    --button-blue-hover: #5f7db4;
+    --light-blue: #3463bc;
+    --dark-blue: #20084b;
+    --light: white;
+    --dark: black;
+    --grey: rgb(180, 180, 180);
+    --dark-grey: rgb(110, 110, 110);
+    --card-blue: #2d3e50;
+}
+
+/*Element Selectors*/
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(to left, var(--dark-blue), var(--light-blue));
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--light);
+    font-size: 40px;
+}
+
+h2 {
+    color: var(--dark);
+    font-size: 30px;
+}
+
+h3 {
+    color: var(--dark);
+    padding-bottom: 10px;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    display: inline;
+}
+
+nav > * {
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 96;
+}
+
+nav h2 {
+    padding-top: 10px;
+}
+
+nav form > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*Class Selectors*/
+.nav_button {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.forecast_image {
+    height: 40px;
+}
+
+.split_bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 100px;
+    height: 3px;
+    background-color: var(--grey);
+}
+
+.forecast_card {
+    background-color: var(--card-blue);
+    width: 15%;
+    color: var(--light);
+    padding: 10px;
+}
+
+.forecast_card > * {
+    padding-bottom: 10px;
+}
+
+/*Unique Selectors*/
+#forecast {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#submit_button {
+    background-color: var(--button-blue);
+    width: 100%;
+    color: var(--light);
+}
+
+#submit_button:hover {
+    background-color: var(--button-blue-hover);
+}
+
+#city_input {
+    width: 100%;
+    height: 35px;
+    border-width: 1px;
+    border-color: var(--grey);
+    text-indent: 10px;
+    border-radius: 5px;
+}
+
+#search_history > * {
+    width: 100%;
+    background-color: var(--grey);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#search_history > *:hover {
+    background-color: var(--dark-grey);
+}
+
+#weather_display {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#current_day_stats {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-color: var(--grey);
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+#current_day_stats div {
+    display: flex;
+    align-items: center;
+}
+
+#current_day_stats > * {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
