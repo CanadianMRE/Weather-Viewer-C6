@@ -27,16 +27,16 @@ let historyCache = [];
 // Links for accesing apis
 
 //api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
-let weatherFutureURL = "http://api.openweathermap.org/data/2.5/forecast?units=metric&";
+let weatherFutureURL = "https://api.openweathermap.org/data/2.5/forecast?units=metric&";
 
 //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 let weatherCurrentURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&";
 
 //http://api.openweathermap.org/geo/1.0/direct?q={city name}&limit={limit}&appid={API key}
-let locationURL = "http://api.openweathermap.org/geo/1.0/direct?";
+let locationURL = "https://api.openweathermap.org/geo/1.0/direct?";
 
 //http://openweathermap.org/img/wn/10d@2x.png
-let imageURL = "http://openweathermap.org/img/wn/"
+let imageURL = "https://openweathermap.org/img/wn/"
 
 // this parses the data for weather in the next 5 days
 function parseFutureWeather(data) {
