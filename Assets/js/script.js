@@ -110,6 +110,7 @@ function findCity(searchCity, addToHistory) {
     }
 
     let location = locationURL+"q="+searchCity+"&limit=1&appid="+apiKey;
+    console.log(location);
     fetch(location)
     .then(function(response){
         return response.json();
