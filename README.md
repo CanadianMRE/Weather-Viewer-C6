@@ -13,7 +13,7 @@ This webpage can be accessed by going to https://canadianmre.github.io/Weather-V
 To use this webpage, simply enter the name of a city into the search field and hit search. You can also click the grey buttons below the search bar to display the city shown.
 
 ## Image
-![alt text](./Assets/images/SiteImage.PNG)
+![alt text](./Assets/images/page-image.PNG)
 
 ## Credits
 
