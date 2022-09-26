@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./Assets/css/reset.css" />
+    <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+  />
+  <link rel="stylesheet" type="text/css" href="./Assets/css/style.css " />
+    <title>Project List</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    
+    <main>
+        <nav>
+            <h2>Search for a City:</h2>
+            <form action="#" id="search_form">
+                <input type="text" id="city_input" placeholder="City">
+                <button type="submit" class="nav_button" id="submit_button">Search</button>
+            </form>
+            <div class="split_bar"></div>
+            <ul id="search_history">
+                <button class="nav_button">Toronto</button>
+                <button class="nav_button">Calgary</button>
+            </ul>
+        </nav>
+
+        <section id="weather_display">
+            <div id="current_day_stats">
+                
+                <div>
+                    <h2 id="c_day_city">City (M/DD/YYYY)</h2>
+                    <img src="" id="c_day_img" alt="weather_icon" class="forecast_image">
+                </div>
+                <p id="c_day_temp">Temp: temp*F</p>
+                <p id="c_day_wind">Wind: wind MPH</p>
+                <p id="c_day_humid">Humidity: 46 %</p>
+            </div>
+            <div id="week_stats">
+                <h3>5-Day Forecast:</h3>
+                <div id="forecast">
+                    <div class="forecast_card">
+                        <h4>M/DD/YYYY</h4>
+                        <div><img src="" alt="weather_icon" class="forecast_image"></div>
+                        <p id="card_temp">Temp: </p>
+                        <p id="card_wind">Wind: </p>
+                        <p id="card_humid">Humidity: </p>
+                    </div>
+                    <div class="forecast_card">
+                        <h4>M/DD/YYYY</h4>
+                        <div><img src="" alt="weather_icon" class="forecast_image"></div>
+                        <p id="card_temp">Temp: </p>
+                        <p id="card_wind">Wind: </p>
+                        <p id="card_humid">Humidity: </p>
+                    </div>
+                    <div class="forecast_card">
+                        <h4>M/DD/YYYY</h4>
+                        <div><img src="" alt="weather_icon" class="forecast_image"></div>
+                        <p id="card_temp">Temp: </p>
+                        <p id="card_wind">Wind: </p>
+                        <p id="card_humid">Humidity: </p>
+                    </div>
+                    <div class="forecast_card">
+                        <h4>M/DD/YYYY</h4>
+                        <div><img src="" alt="weather_icon" class="forecast_image"></div>
+                        <p id="card_temp">Temp: </p>
+                        <p id="card_wind">Wind: </p>
+                        <p id="card_humid">Humidity: </p>
+                    </div>
+                    <div class="forecast_card">
+                        <h4>M/DD/YYYY</h4>
+                        <div><img src="" alt="weather_icon" class="forecast_image"></div>
+                        <p id="card_temp">Temp: </p>
+                        <p id="card_wind">Wind: </p>
+                        <p id="card_humid">Humidity: </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
